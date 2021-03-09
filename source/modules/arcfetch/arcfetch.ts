@@ -33,13 +33,14 @@ export class ArcFetchRequest extends Request {
 
     // request url
     let _request_url: ArcFetchRestUrl =
-      `https://arcapi.lowiro.com/coffee/${ARCAPI_VERSION}/${resturl}`;
+      `https://arcapi.lowiro.com/latte/${ARCAPI_VERSION}/${resturl}`;
 
     // http headers
     const _request_headers: ArcFetchHeaders = {
       'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
       'AppVersion': ARCAPI_APPVERSION,
       'User-Agent': ARCAPI_USERAGENT,
+      'Platform': 'android',
       'Host': 'arcapi.lowiro.com',
       'Connection': 'Keep-Alive'
     }
